@@ -4,7 +4,7 @@ import 'package:jacon_und_anfragen_561/screens/quest_4.dart';
 import 'package:jacon_und_anfragen_561/screens/quest_5.dart';
 import 'package:jacon_und_anfragen_561/screens/quest_6.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'SharedPreferences ',
+      title: "SharedPreferences",
       home: MyWidget(),
     );
   }
@@ -31,8 +31,8 @@ class MyWidget extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Quest3()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Quest3()));
               },
               child: const Text("Aufgabe 3"),
             ),
